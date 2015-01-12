@@ -5,9 +5,14 @@ body {
   width: 100%;
   font-family: 'Source Sans Pro', sans-serif;
 }
+
+.wrapper {
+  width: 1150px;
+  margin: 0 auto;
+}
 .header {
   width:100%;
-  height:425px;
+  height:475px;
   background: url("images/surfheader.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,7 +21,7 @@ body {
   position:relative;
   top:0px;
   width:100%;
-  height:425px;
+  height:475px;
   background: #2554C7;
   opacity: 0.75}
 
@@ -40,14 +45,109 @@ nav li {
   border: 0px;
 }
 .title {
-  font-size: 70px;
   color: white;
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-top: 0px;
+  margin-bottom: 00px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
+
+.title h1 {
+  font-size: 90px;
+  padding-top: 75px;
+  margin: 0px;
+}
+
+
+/***BODY STUFF***/
+h2 {
+  font-size:60px;
+  color: navy;
+}
+h3 {
+  font-size: 15px;
+  text-align: center;
+  color: navy;
+}
+blockquote {
+  color:#106db3;
+  font-size:30px;
+  padding-top:5px;
+  padding-bottom:5px;
+  padding-left:20px;
+  border-left:medium solid #ddd;
+  margin-left:0px;
+}
+
+.title p {
+  font-size: 15px;
+}
+
+
+section, aside {
+  display: inline-block;
+  vertical-align: top;
+}
+
+section {
+  width: 55%;
+  padding: 50px;
+  margin: 10px;
+}
+aside {
+  width: 25%;
+  padding: 10px;
+  padding-top: 75px;
+  margin: 10px;
+}
+.profile img {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+
+}
+.adpic img {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  display: block;
+  width: 175px;
+  height: 175px;
+  border-radius: 0%;
+
+}
+.profile {
+  width: 200px;
+}
+
+.profile li {
+  display: inline-block;
+}
+
+.trPic {
+
+  width:100%;
+  height:475px;
+  background: url("images/surfheader.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.trPic .redO {
+  position:relative;
+  top:0px;
+  width:100%;
+  height:425px;
+  background: #2554C7;
+  opacity: 0.75}
+
+/***LOWER BODY/FOOTER***/
+
+
 footer {
   display: block;
   width: 100%;
@@ -68,71 +168,42 @@ footer {
   text-align: center;
 
 }
-.lowerbody ul {
-  display: block;
-  padding: 0px;
-  margin-right: auto;
-  margin-left: auto;
-  width: 1087px;
-  border: 0px;
-}
-.lowerbody li {
-  display: inline-block;
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
-}
-.lowerbody img {
-  height: 250px;
-  width: 250px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-/* layout */
 
-section, aside {
+
+
+/**POPULAR POSTS**/
+
+
+.popularposts img{
+  width: 250px;
+  height: 250px;
+  margin: 1px;
+  padding: 0;
+  display: inline-block;
+
+}
+
+.popularposts {
+  position: relative;
+}
+
+.popularposts p{
+  font-size: 20px;
+  width: 40px;
+  color: navy;
+  font-family: "Lato", sans-serif;
+  text-align: left;
+  vertical-align: top;
+  margin: 35px 5px -0px 5px;
+  position: absolute;
+  top: 100px;
+}
+
+.slater, .beers, .zach, .liquor {
+
   display: inline-block;
   vertical-align: top;
+  /*width: 250px;
+  height: 200px;
+  padding: 0;*/
 }
-
-section {
-  width: 55%;
-  padding: 50px;
-  margin: 10px;
-}
-aside {
-  width: 25%;
-  padding: 10px;
-  margin: 10px;
-}
-.profile img {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-  display: block;
-  width: 125px;
-}
-.profile {
-  width: 200px;
-}
-
-.profile li {
-  display: inline-block;
-}
-
-.trPic {
-
-  width:100%;
-  height:425px;
-  background: url("images/surfheader.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  }
-.trPic .redO {
-  position:relative;
-  top:0px;
-  width:100%;
-  height:425px;
-  background: #2554C7;
-  opacity: 0.75}

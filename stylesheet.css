@@ -25,10 +25,6 @@ body {
   background: #2554C7;
   opacity: 0.75}
 
-img {
-  opacity:0.4;
-  opacity: blue;
-}
 nav ul {
   margin: 0;
   padding: 10px;
@@ -37,6 +33,7 @@ nav ul {
   height: 20px;
   text-align: right;
 }
+
 nav li {
   display: inline-block;
   padding: 4px;
@@ -44,6 +41,7 @@ nav li {
   margin: 0px;
   border: 0px;
 }
+
 .title {
   color: white;
   text-align: center;
@@ -59,17 +57,19 @@ nav li {
   margin: 0px;
 }
 
-
 /***BODY STUFF***/
+
 h2 {
   font-size:60px;
   color: navy;
 }
+
 h3 {
   font-size: 15px;
   text-align: center;
   color: navy;
 }
+
 blockquote {
   color:#106db3;
   font-size:30px;
@@ -84,7 +84,6 @@ blockquote {
   font-size: 15px;
 }
 
-
 section, aside {
   display: inline-block;
   vertical-align: top;
@@ -95,12 +94,14 @@ section {
   padding: 50px;
   margin: 10px;
 }
+
 aside {
   width: 25%;
   padding: 10px;
   padding-top: 75px;
   margin: 10px;
 }
+
 .profile img {
   margin-left: auto;
   margin-right: auto;
@@ -109,8 +110,8 @@ aside {
   width: 100px;
   height: 100px;
   border-radius: 100%;
-
 }
+
 .adpic img {
   margin-left: auto;
   margin-right: auto;
@@ -119,8 +120,8 @@ aside {
   width: 175px;
   height: 175px;
   border-radius: 0%;
-
 }
+
 .profile {
   width: 200px;
 }
@@ -130,13 +131,13 @@ aside {
 }
 
 .trPic {
-
   width:100%;
   height:475px;
   background: url("images/surfheader.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .trPic .redO {
   position:relative;
   top:0px;
@@ -149,61 +150,111 @@ aside {
 
 
 footer {
-  display: block;
+  display: inline-block;
   width: 100%;
-  background-color: #35586c;
+  background-color: #233354;
 }
 
 .lowerbody {
+  text-align: center;
   margin: auto;
   padding: auto;
   border: 0px;
   list-style-type: none;
 }
+
 .lowerbody h1 {
   margin-right: auto;
   margin-left: auto;
   width: 1200px;
   padding: 0;
   text-align: center;
-
 }
 
+/***POPULAR POSTS***/
 
-
-/**POPULAR POSTS**/
-
-
-.popularposts img{
-  width: 250px;
-  height: 250px;
-  margin: 1px;
-  padding: 0;
-  display: inline-block;
-
+.tint{
+  display:block;
+  position:absolute;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  background-color:rgba(31, 103, 181, 0.7);
+  text-align:center;
 }
 
-.popularposts {
-  position: relative;
+#most_popular_posts{
+  display:inline-block;
+  color:#073470;
+  font-size:3.5em;
+  width:100%;
+  text-align:center;
+  padding:0.6em 0;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  font-weight:bold;
+  text-decoration:none;
+  border-top: silver solid 1px;
+  margin-top:1em;
+}
+.bottom_pics{
+  position:relative;
+  float:left;
+  width:24.85%;
+  height:20em;
+  background-repeat:no-repeat;
+}
+.bottom_pics>a{
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
+  text-decoration:none;
+  color:rgba(37,36,40,0.88);
+  font-size:1.8em;
+  text-align:left;
+  font-weight:bold;
+}
+#box_two>a,#box_four>a{
+  padding:9.5em 0 0 0.5em;
+}
+#box_one>a,#box_three>a{
+  padding:8.4em 0 0 0.5em;
+}
+.bottom_pics>a:hover{
+  background-color:rgba(255, 255, 255, 0);
+  color:white;
+}
+#box_one,#box_two,#box_four{
+  background-size:auto 100%;
+}
+#box_three{
+  background-size:auto 100%;
+}
+#box_one{
+  background-image:url(images/kellyslater.jpg);
+}
+#box_two{
+  background-image:url(images/beers.jpg);
+}
+#box_three{
+  background-image:url(images/zach.jpg);
+}
+#box_four{
+  background-image:url(images/liquor.jpg);
 }
 
-.popularposts p{
-  font-size: 20px;
-  width: 40px;
-  color: navy;
-  font-family: "Lato", sans-serif;
-  text-align: left;
-  vertical-align: top;
-  margin: 35px 5px -0px 5px;
-  position: absolute;
-  top: 100px;
-}
+/***RESPONSIVE DESIGN***/
 
-.slater, .beers, .zach, .liquor {
-
-  display: inline-block;
-  vertical-align: top;
-  /*width: 250px;
-  height: 200px;
-  padding: 0;*/
-}
+@media screen and (max-width:320px) {
+  .wrapper {
+  max-width: 320px;
+  max-height: 100%;
+  }
+@media screen and (max-width:320px) {
+    .aside {
+      display: block;
+      padding-top: 0px;
+    }
+@media screen and (max-width:320px) {
+      .bottom_pics {
+        width: 100%;
+        float: none;
+      }

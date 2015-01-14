@@ -146,6 +146,43 @@ aside {
   background: #2554C7;
   opacity: 0.75}
 
+/**FONT AWESOME BUTTONS**/
+.fontawesome {
+  margin-top:60px;
+}
+
+.fontawesome a {
+  margin-right:10px;
+  color:white;
+  font-size:13px;
+}
+
+.fontawesome a:hover {
+  opacity:.5;
+}
+
+.fontawesome span {
+  padding:10px;
+  background-color:#a3b3bf;
+}
+
+.fontawesome .fa {
+  background-color:#5e686f;
+  padding:6px;
+  margin-bottom:4px;
+  vertical-align:middle;
+}
+
+.fontawesome .fa-share-square {
+  background-color:#083452;
+
+}
+
+.fontawesome .share span {
+  background-color:#106db3;
+}
+
+
 /***LOWER BODY/FOOTER***/
 
 
@@ -258,3 +295,8 @@ footer {
         width: 100%;
         float: none;
       }
+
+@media screen and (max-width:320px) {
+    .fontawesome .fa-share-square {
+    display: inherit;
+  }
